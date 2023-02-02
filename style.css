@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "League Spartan";
+    background-repeat: no-repeat, repeat;
+    background-position: right top, left bottom;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: hsl(300, 43%, 22%);
+}
+
+h2 {
+    color:  hsl(300, 43%, 22%);
+    padding-bottom: 22px;
+}
+
+h3 {
+    font-weight: 700;
+    margin-top: 35px;
+    color: white;
+    font-size: 15px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 10px;
+    color: hsl(333, 80%, 67%);
+}
+
+p {
+    color: hsl(303, 10%, 53%);
+}
+
+
+.head {
+    width: 30%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin: 100px 0 40px 100px;
+    justify-content: space-between;
+}
+.rates {
+    width: 55%;
+}
+
+.rate, .rate1, .rate2 {
+    gap: 60px;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.rate1 {
+    margin-left: 43px;
+}
+
+.rate2{
+    margin-left: 77px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card, .card1, .card2 {
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 45px;
+    height: 200px;
+    width: 23%;
+    background-color: hsl(300, 43%, 22%);
+}
+
+.card1 {
+    margin-top: 70px;
+}
+
+.card2 {
+    margin-top: 90px;
+}
+
+.card-head img {
+    margin: 30px 20px 20px 30px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.card-head {
+    display: flex;
+}
+
+.cardp {
+    padding: 15px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: hsl(300, 24%, 96%);
+}
+
+@media (max-width: 375px) {
+
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        margin: 90px 15px 40px;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        line-height: 1.5rem;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    .top {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head {
+        width: 90%;
+    }
+
+    .rates {
+        margin-right: 25px;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rate div, div, div, div {
+        padding-top: 15px;
+    }
+
+    .rate, .rate1, .rate2 {
+        gap: 15px;
+        padding: 0;
+        width: 100%;
+        margin: 10px;
+        display: grid;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card, .card1, .card2 {
+        height: 250px;
+        width: 90%;
+        margin: 10px 20px;
+    }
+
+    .card-head {
+        margin-top: 22px;
+    }
+
+    .card-head img {
+        padding: 0;
+        margin: 0px 20px 20px 30px;
+        width: 50px;
+    }
+
+    .card-head div, div, div, div {
+        padding-top: 8px;
+    }
+
+    .cardp {
+        font-size: 19px;
+        text-align: start;
+        padding: 0;
+        margin: 10px 15px 0;
+    }
+
+}
